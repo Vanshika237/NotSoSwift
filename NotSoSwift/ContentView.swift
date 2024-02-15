@@ -12,10 +12,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("You pressed the button ")
+                .padding(.bottom)
             Text(count.description)
-                .fontWeight(.bold)
                 .padding(.vertical)
+                .scaleEffect(3.5)
             Text(count == 1 ? "time" : "times")
+                .padding(.top)
             Button {
                 count += 1
             } label: {
